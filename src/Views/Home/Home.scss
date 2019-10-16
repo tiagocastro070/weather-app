@@ -1,0 +1,20 @@
+.background-pattern {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: luminosity;
+}
+
+.current-day {
+	padding: 50px 0 20px 0;
+	margin-bottom: 50px;
+	background-color: white;
+
+	@media (min-width: 768px) {
+		padding: 90px 0 50px 0;
+		margin-bottom: 50px;
+	}
+}

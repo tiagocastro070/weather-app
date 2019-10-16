@@ -1,0 +1,15 @@
+
+// include default bootstrap framework
+
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+// @import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+
+// import default base styles
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Rubik&display=swap');
+@import 'base/css-variables';
+@import 'base/mixins';
+@import 'base/base';

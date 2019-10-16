@@ -1,0 +1,62 @@
+// ===== GRID AND VIEWPORTS ===== //
+
+// Number of columns
+$grid-columns: 		12;
+
+// Column padding. Divided by two, between left and right
+$grid-gutter-width: 30px;
+
+$screen-sm:     map-get($grid-breakpoints, 'sm'); 	// default is 576 from Bootstrap
+$screen-md:     map-get($grid-breakpoints, 'md'); 	// default is 768 from Bootstrap
+$screen-lg:     map-get($grid-breakpoints, 'lg'); 	// default is 992 from Bootstrap
+$screen-xl:     map-get($grid-breakpoints, 'xl'); 	// will be the maximum width of the site. Default is 1200 from Bootstrap
+$screen-sm-min: $screen-sm;
+$screen-md-min: $screen-md;
+$screen-lg-min: $screen-lg;
+$screen-xl-min: $screen-xl;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+
+:root {
+
+	// ===== COLORS ===== //
+	
+	--color-primary: #007bd2;
+	--color-primary2: #2b91ff;
+	--color-primary3: #4fa4ff;
+	--color-primary4: #77b8fd;
+	--color-primary5: #b1d6fd;
+	--color-primary6: #e5e6fd;
+	--color-secondary: #C02D14;
+	--color-secondary2: #db4a30;
+	--color-secondary3: #da6651;
+	--color-secondary4: #e78776;
+	--color-secondary5: #f7b1a5;
+	--color-secondary6: #ffefec;
+	--color-default: #2f2f2f;
+	--color-default2: #333;
+	--color-default3: #555;
+	--color-default4: #666;
+	--color-default5: #999;
+	--color-default6: #ccc;
+	--color-default7: #eee;
+	--color-default8: #f9f9f9;
+	// Feedback colors - usually colors to be used on
+	// messages of success, warning or error from forms.
+	--color-success:         #1ca800; // Used on success messages
+	--color-info:            var(--color-primary); // Used on info messages
+	--color-warning:         #d7a436; // Used on warning messages
+	--color-danger:          var(--color-secondary); // Used on error messages
+
+
+	// ===== FONTS ===== //
+	--font-primary: 'Rubik', sans-serif;
+	--font-secondary: 'Rubik', sans-serif;
+	--font-size: 15px;
+	--font-size-mobile: 14px;
+	--font-line-height: 22px;
+	--font-line-height-mobile: 20px;
+
+}

@@ -1,0 +1,54 @@
+.loading-placeholder {
+	animation: loadingAnimation 0.75s linear 0s infinite alternate;
+}
+
+.placeholder-temperature {
+	position: relative;
+	opacity: 0.05;
+	color: black;
+	font-family: var(--font-secondary);
+	font-size: 6.5em;
+	line-height: 1;
+
+	@media (min-width: 768px) {
+		font-size: 9em;
+	}
+}
+
+.placeholder-location {
+	width: 30%;
+	min-width: 150px;
+	height: 20px;
+	margin-bottom: 50px;
+	border-radius: 3px;
+	background-color: var(--color-default7);
+}
+
+.placeholder-detail {
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		max-width: 30%;
+		height: 30px;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		background-color: var(--color-default7);
+	}
+
+	small {
+		display: block;
+		width: 100%;
+		max-width: 45%;
+		height: 20px;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		opacity: 1;
+		background-color: var(--color-default7);
+	}
+}
+
+@keyframes loadingAnimation {
+	0%   { opacity: 0.2; }
+	100% { opacity: 1; }
+}

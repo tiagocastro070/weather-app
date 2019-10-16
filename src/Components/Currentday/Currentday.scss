@@ -1,0 +1,61 @@
+.current-day-image {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.current-day-main {
+	margin-bottom: 40px;
+}
+
+.current-day-temperature {
+	position: relative;
+	color: black;
+	font-family: var(--font-secondary);
+	font-size: 6.5em;
+	line-height: 1;
+
+	@media (min-width: 768px) {
+		font-size: 9em;
+	}
+
+	span {
+		display: inline-block;
+		width: 0;
+		margin-left: -20px;
+		opacity: 0.25;
+		font-size: 0.2em;
+		line-height: 2.3em;
+		vertical-align: top;
+	}
+}
+
+.current-day-location {
+	opacity: 0.7;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+.weather-detail {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.weather-label {
+	opacity: 0.25;
+	font-weight: normal;
+}
+
+.weather-wind-direction {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-left: 15px;
+	opacity: 0.15;
+	background-image: url('/images/arrow.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	vertical-align: middle;
+}
