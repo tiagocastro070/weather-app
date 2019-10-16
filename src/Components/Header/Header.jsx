@@ -34,7 +34,7 @@ class Header extends React.Component {
 			<div className="header">
 				<div className="container">
 					<nav className="navbar">
-						<a href="" title="" className="header__fork" target="_blank" rel="noreferer noopener">
+						<a href="https://github.com/tiagocastro070/weather-app" title="Fork on GitHub" className="header__fork" target="_blank" rel="noreferer noopener">
 							<img src={gitHubLogo} alt="GitHub logo" width="20" height="20" />
 						</a>
 						<form className="search-form" onSubmit={ this.handleSubmit }>
